@@ -1,0 +1,106 @@
+html{
+  height: 100%;
+  background: black;
+  overflow: hidden;
+}
+
+body{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+#field{
+  /*border: solid 10px green;*/
+  height: 100%;
+  box-sizing: border-box;
+
+}
+#ball{
+/*box-sizing: border-box;*/
+  position: absolute;
+   left: 50%;
+  top: 50%;
+  width: 5em;
+ height: 5em;
+border-radius: 100%;
+ background-image: url("ball.jpg");
+ background-size: cover;
+ animation: spin 0.5s linear infinite;
+}
+
+#time{
+margin: 0;
+padding: 0;
+  position: absolute;
+   left: 0;
+  top: 0;
+  font-size: 20em;
+  -webkit-animation: color 5s ease-in-out infinite;
+  	-moz-animation: color 5s ease-in-out infinite;
+  	-o-animation: color 5s ease-in-out infinite;
+  	animation: color 5s ease-in-out infinite;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+
+    font-weight: bolder;
+}
+@keyframes color {
+      0% {
+        color: #FF0000;
+      }
+      17%{
+         color: #FFA500;
+      }
+      34%{
+           color: #FFFF00;
+      }
+     51%{
+         color:  #008000;
+      }
+	68% {
+		  color:  #0000FF;
+	}
+   85%{
+         color:  #000080;
+   }
+   100%{
+     color: #800080;
+   }
+
+}
+@-webkit-keyframes color {
+  0% {
+        color: #FF0000;
+      }
+      17%{
+         color: #FFA500;
+      }
+      34%{
+         color:  #FFFF00;
+      }
+     51%{
+         color:  #008000;
+      }
+	68% {
+		  color:  #0000FF;
+	}
+   85%{
+         color:  #000080;
+   }
+   100%{
+     color: #800080;
+   }
+}
+
+
+
+@keyframes spin {
+	0% {
+		transform: rotateZ(0);
+	}
+	100% {
+		transform: rotateZ(359deg);
+	}
+}
