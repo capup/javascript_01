@@ -1,0 +1,23 @@
+</<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="stjs.css">
+
+  </head>
+  <body>
+    <div id="field">
+      <div id="ball"></div>
+
+</div>
+<script type="text/javascript" src="01.js"></script>
+<div id="time">
+<time-formatted id="elem" hour="numeric" minute="numeric" second="numeric"></time-formatted>
+</div>
+<script>
+setInterval(() => elem.setAttribute('datetime', new Date()), 1000); // (5)
+</script>
+
+      </body>
+</html>
